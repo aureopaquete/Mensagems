@@ -11,6 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,5 +55,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void mostraMensagem(View view) {
+        Toast.makeText(
+                this,
+                "Clicou no botão enviar !!!",
+                Toast.LENGTH_LONG).show();
     }
 }
