@@ -9,7 +9,7 @@
     tools:showIn="@layout/activity_main">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTextMensagem"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -19,18 +19,19 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="Mensagem"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        android:inputType="textShortMessage|textAutoCorrect"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEnviar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonEnviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:onClick="mostraMensagem"
         android:text="Enviar"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextMensagem"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
