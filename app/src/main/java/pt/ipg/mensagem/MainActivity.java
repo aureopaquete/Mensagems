@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
     public void mostraMensagem(View view) {
         Intent intent = new Intent(this, MostraMensagemActivity.class);
 
+        intent.putExtra(DefinicoesApp.MENSAGEM, "Olá");
+
         startActivity(intent);
     }
 }
