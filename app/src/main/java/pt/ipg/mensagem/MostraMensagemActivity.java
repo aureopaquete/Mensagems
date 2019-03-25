@@ -20,7 +20,7 @@ public class MostraMensagemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mostra_mensagem);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mostraMensagem();
