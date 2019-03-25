@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mensagem</string>
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_mostra_mensagem">Mensagem recebida</string>
+    <string name="mensagem">Mensagem:</string>
+    <string name="hint_mensagem">Mensagem</string>
+    <string name="enviar">Enviar</string>
+    <string name="mensagem_obrigatoria">Preencha a mensagem</string>
+</resources>
