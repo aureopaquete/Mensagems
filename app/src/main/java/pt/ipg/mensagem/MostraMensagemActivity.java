@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MostraMensagemActivity extends AppCompatActivity {
@@ -31,7 +32,9 @@ public class MostraMensagemActivity extends AppCompatActivity {
 
         String mensagem = intent.getStringExtra(DefinicoesApp.MENSAGEM);
 
-        Toast.makeText(this, mensagem, Toast.LENGTH_LONG).show();
+        TextView textViewMensagem = (TextView) findViewById(R.id.textViewMensagem);
+
+        textViewMensagem.setText(mensagem);
     }
 
 }
