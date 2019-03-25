@@ -3,4 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_mostra_mensagem">Mensagem recebida</string>
     <string name="mensagem">Mensagem:</string>
+    <string name="hint_mensagem">Mensagem</string>
+    <string name="enviar">Enviar</string>
+    <string name="mensagem_obrigatoria">Preencha a mensagem</string>
 </resources>

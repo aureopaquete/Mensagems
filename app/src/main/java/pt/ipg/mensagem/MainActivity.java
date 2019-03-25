@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         String mensagem = editTextMensagem.getText().toString();
 
         if (mensagem.trim().length() == 0) {
-            editTextMensagem.setError("Preencha a mensagem");
+            editTextMensagem.setError(getString(R.string.mensagem_obrigatoria));
             editTextMensagem.requestFocus();
             return;
         }
