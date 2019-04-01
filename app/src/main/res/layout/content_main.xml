@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margem_padrao"
         android:layout_marginRight="@dimen/margem_padrao"
-        android:onClick="mostraMensagem"
+        android:onClick="enviaMensagem"
         android:text="@string/enviar"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextMensagem"
         app:layout_constraintEnd_toEndOf="parent" />

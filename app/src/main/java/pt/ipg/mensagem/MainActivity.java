@@ -15,6 +15,8 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void mostraMensagem(View view) {
+    public void enviaMensagem(View view) {
         EditText editTextMensagem = (EditText) findViewById(R.id.editTextMensagem);
         String mensagem = editTextMensagem.getText().toString();
 
@@ -57,9 +59,12 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        Date data = new Date();
+
         Intent intent = new Intent(this, MostraMensagemActivity.class);
 
         intent.putExtra(DefinicoesApp.MENSAGEM, mensagem);
+        intent.putExtra(DefinicoesApp.DATA, data);
 
         startActivity(intent);
     }

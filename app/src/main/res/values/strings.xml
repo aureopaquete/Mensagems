@@ -6,4 +6,5 @@
     <string name="hint_mensagem">Message</string>
     <string name="enviar">Send</string>
     <string name="mensagem_obrigatoria">Please enter a message</string>
+    <string name="data_enviada">Sent:</string>
 </resources>

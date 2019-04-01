@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Date;
+
 public class MostraMensagemActivity extends AppCompatActivity {
 
     @Override
@@ -31,10 +33,13 @@ public class MostraMensagemActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         String mensagem = intent.getStringExtra(DefinicoesApp.MENSAGEM);
+        Date data = (Date) intent.getSerializableExtra(DefinicoesApp.DATA);
 
         TextView textViewMensagem = (TextView) findViewById(R.id.textViewMensagem);
-
         textViewMensagem.setText(mensagem);
+
+        TextView textViewData = (TextView) findViewById(R.id.textViewData);
+        textViewData.setText(data.toString());
     }
 
 }

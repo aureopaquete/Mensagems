@@ -7,4 +7,5 @@
     <string name="hint_mensagem">Mensagem</string>
     <string name="enviar">Enviar</string>
     <string name="mensagem_obrigatoria">Preencha a mensagem</string>
+    <string name="data_enviada">Enviada em:</string>
 </resources>

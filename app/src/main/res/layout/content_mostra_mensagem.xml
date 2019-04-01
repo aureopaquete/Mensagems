@@ -24,4 +24,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margem_padrao"
         tools:text="Isto é o tools text" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/data_enviada"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="@dimen/margem_padrao"
+        />
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margem_padrao"
+        tools:text="01/04/2019 9:00:00" />
 </LinearLayout>
